@@ -4,7 +4,7 @@ on: pull_request
 
 jobs:
   check-version:
-    name: "Compare version agains master"
+    name: "Check version"
     runs-on: ubuntu-latest
 
     steps:
