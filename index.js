@@ -13,7 +13,7 @@ Toolkit.run(async tools => {
   console.log('context', tools.context)
   console.log('opts', tools.opts)
   console.log('env', process.env)
-  console.log('tools', JSON.stringify(tools))
+  console.log('payload', JSON.stringify(tools.payload))
   const branch = tools.arguments.branch
   // if (!branch) {
   //   tools.exit.failure('`branch` needs to be set in `with` config')
