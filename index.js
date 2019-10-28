@@ -6,7 +6,6 @@ const compareVersions = require('compare-versions')
 Toolkit.run(async tools => {
   const pkg = tools.getPackageJSON()
   console.log('pkg1', pkg)
-  const event = tools.context.payload
 
   try {
     const currentVersion = pkg.version.toString()
