@@ -12,6 +12,7 @@ Toolkit.run(async tools => {
 
     console.log('arguments', tools.arguments)
     console.log('context', tools.context)
+    console.log('opts', tools.opts)
     console.log('tools', JSON.stringify(tools))
     const branch = tools.arguments.branch
     if (!branch) {
