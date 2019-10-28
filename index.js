@@ -10,7 +10,9 @@ Toolkit.run(async tools => {
   try {
     const currentVersion = pkg.version.toString()
 
-    console.log(tools.arguments)
+    console.log('arguments', tools.arguments)
+    console.log('context', tools.context)
+    console.log('tools', JSON.stringify(tools))
     const branch = tools.arguments.branch
     if (!branch) {
       tools.exit.failure('`branch` needs to be set in `with` config')
