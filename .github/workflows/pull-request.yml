@@ -4,7 +4,7 @@ on: pull_request
 
 jobs:
   check-version:
-    name: "Compare version agains master"
+    name: "Check version"
     runs-on: ubuntu-latest
 
     steps:
@@ -21,8 +21,8 @@ jobs:
       - name: "cat package.json"
         run: cat ./package.json
       - name: "Has newer version than master?"
-        uses: "phips28/gh-action-has-newer-version@master"
+        uses: "phips28/gh-action-has-newer-version@test"
         with:
-          branch: "master"
+          branch: "origin/master"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
