@@ -1,0 +1,30 @@
+{
+  "name": "gh-action-has-newer-version",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phips28/gh-action-has-newer-version.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/phips28/gh-action-has-newer-version/issues"
+  },
+  "homepage": "https://github.com/phips28/gh-action-has-newer-version#readme",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./index.js",
+    "test": "jest"
+  },
+  "dependencies": {
+    "actions-toolkit": "^2.2.0",
+    "compare-versions": "^3.5.1",
+    "yargs": "^14.2.0"
+  },
+  "devDependencies": {
+    "jest": "^24.5.0",
+    "standard": "^14.3.1"
+  }
+}

@@ -1,0 +1,8 @@
+name: Automated version check for npm packages.
+description: Automated version check for npm packages. Checks if the current checkout's package number is higher than in give branch.
+runs:
+  using: docker
+  image: Dockerfile
+branding:
+  icon: arrow-up-right
+  color: green

@@ -1,0 +1,28 @@
+name: "Check Newer Version"
+
+on: pull_request
+
+jobs:
+  check-version:
+    name: "Compare version agains master"
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: "Checkout source code"
+        uses: "actions/checkout@v1"
+        with:
+          ref: ${{ github.ref }}
+      - name: "cat package.json"
+        run: cat ./package.json
+      - name: "Setup Node.js"
+        uses: "actions/setup-node@v1"
+        with:
+          node-version: 8.10.0
+      - name: "cat package.json"
+        run: cat ./package.json
+      - name: "Has newer version than master?"
+        uses: "phips28/gh-action-has-newer-version@master"
+        with:
+          branch: "master"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
