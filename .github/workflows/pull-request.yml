@@ -23,6 +23,6 @@ jobs:
       - name: "Has newer version than master?"
         uses: "phips28/gh-action-has-newer-version@test"
         with:
-          branch: "HEAD:master"
+          branch: "origin/master"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
