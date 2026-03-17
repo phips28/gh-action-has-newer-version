@@ -19,12 +19,12 @@
     "test": "jest"
   },
   "dependencies": {
-    "actions-toolkit": "^2.2.0",
+    "actions-toolkit": "^6.0.1",
     "compare-versions": "^3.5.1",
     "yargs": "^14.2.0"
   },
   "devDependencies": {
     "jest": "^24.5.0",
-    "standard": "^14.3.1"
+    "standard": "^17.1.2"
   }
 }
